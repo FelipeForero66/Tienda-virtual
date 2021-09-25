@@ -15,16 +15,26 @@ color: #03020f;
 }
 
 header{
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+.boton{
+    color: cornsilk;
+    background:#023047;  
+    margin-top: 20px;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .franja{
     background: #1a8ecc;
     height: 80px;
     width: 100%;
-    color:black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -56,13 +66,7 @@ input{
 
 }
 
-.boton{
-    background: black;
-    color:blanchedalmond;
-    margin-top: 20px;
-    width: 60px;
-    height: 30px;
-}
+
 
 .pie{
     background: #1a8ecc;
@@ -120,4 +124,9 @@ input{
 
 .redes p img{
     margin-left: 5px;
+}
+
+a{
+    color: blanchedalmond;
+   
 }
