@@ -44,24 +44,12 @@ input{
     border-color: cornflowerblue;
 }
 
-.registro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    margin-left: 42%;
-    margin-top: 20px;
-
-}
 
 #parrafo{
     text-align: center;
     color: black;
     margin-top: 20px;
     font-size: 24px;
-
 }
 
 
@@ -118,17 +106,28 @@ li:hover {
 }
 
 .botones{
-    margin-top: 10px;
-    align-items: center;
+    margin-top: 30px;
+    align-items:stretch;
 }
 .clientedatos{
     display: flex;
     flex-direction:row;
     align-items: center;
-}
+    margin-top:  15px;
+    }
 
 .productodatos{
     display: flex;
     flex-direction:row;
+    align-items:center;
+    margin-top:  60px;
+    margin-right: 940;
+}
+
+.totalventa{
+    display: flex;
+    flex-direction:column;
     align-items: center;
+    margin-top:  80px;
+    margin-left: 940px;
 }
