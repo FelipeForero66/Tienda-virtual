@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+    <p> {{ message }}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<div class="Producto">
+    <form action="data" method="POST">
+      <!-- <p>Nombre del archivo:</p>
+      <input type="text" name="cedula" maxlength="10" />
+      <button class="boton1" >Examinar</button>
+    <div class ="botones">   
+            <button class="boton" >Cargar</button>
+    </div>  -->
+
+      <p>Nombre del archivo:</p>
+      <input type="file" name="upload-file" id="">
+      <input type="submit" value="Submit">
+
+
+    </form>
+</div>
+{% endblock %}

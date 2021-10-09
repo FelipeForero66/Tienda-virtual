@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+    <p> {{ message }}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<div class="proveedor">
+    <form action="/addPro" method="POST"> 
+        <p>NIT:<input type="text" name="nitt" placeholder="Nitt" maxlength="10" /></p>
+        <p>Nombre proveedor:<input type="text" name="NomPro" placeholder="Nombre Proveedor" maxlength="10" /></p>
+        <p>Dirección:<input type="text" name="dire" placeholder="Direcciòn" maxlength="20" /></p>
+        <p>Teléfono:<input type="text" name="telusua" placeholder="Telèfono Usuario" maxlength="10" /></p>
+        <p>Ciudad:<input type="text" name="ciudad" placeholder="Ciudad" maxlength="10" /></p>
+    <div class="botones">
+            <button class="boton">Consultar</button>
+            <button class="boton" type="submit">Crear</button>
+            <button class="boton">Actualizar</button>
+            <button class="boton">Borrar</button>
+
+    </div> 
+    </form>
+</div>
+
+<!-- <form action="/addContact" method="POST">
+    <input type="text" name="id" placeholder="Id">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="ape" placeholder="Apellido">
+    <input type="text" name="dir" placeholder="Dirccion">
+    <button type="submit">
+        Save
+    </button>
+</form> -->
+
+{% endblock %}

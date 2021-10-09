@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class ="listClient">
+    <table>
+        <thead>
+            <tr>    
+                <td>Id Clientes</td>
+                <td>Full Name</td>
+                <td>Correo Electronico</td>
+                <td>Usuario</td>
+                <td>Contraseña</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.0}}</td>
+                    <td>{{ contact.1}}</td>
+                    <td>{{ contact.2}}</td>
+                    <td>{{ contact.3}}</td>
+                    <td>{{ contact.4}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

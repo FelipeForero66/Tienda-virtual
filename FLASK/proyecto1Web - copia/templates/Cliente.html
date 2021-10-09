@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+    <p> {{ message }}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<div class="registro">
+
+    <form action="/addCli" method="POST">
+        <p>Cedula:<input type="text" name="ced" placeholder="Cedula" maxlength="15"> </p>
+        <p>Nombre:<input type="text" name="name" placeholder="Nombre" maxlength="15"> </p>
+        <p>Correo:<input type="text" name="mail" placeholder="Correo" maxlength="15"> </p>
+        <p>Usuario:<input type="text" name="usua" placeholder="Usuario" maxlength="15"> </p>
+        <p>Contraseña:<input type="text" name="passwd" placeholder="Contraseña" maxlength="15"> </p>
+        <div class="botones">
+            <button class="boton" >Consultar </button>
+            <button class="boton1"> Actualizar </button>
+            <button class="boton2" type="submit"> Crear </button>
+            <button class="boton3"> Borrar</button>
+        </div>
+    </form>
+
+
+</div>
+<!-- {% for contact in contacts %}
+{{ contact.0}}
+{% endfor %} -->
+
+{% endblock %}
