@@ -16,8 +16,9 @@
 
 <body>
     <header>
+ 
         <div class="franja">
-            <h1 class="titulo">Tienda Grupo-62 G3</h1>
+            <h1 class="titulo">FRESCURA SIN STRESS</h1>
             <ul class="menu">
                 <a class="listas "
                     href="/Cliente">
@@ -40,21 +41,36 @@
             
             <img src="{{ url_for('static', filename='/IMG/carrito.png') }}" alt="carrito_compras" id="carritoCompras"/>
 
-        </div>
     </header>
 
 
     {% block content%}
     {% endblock %}
 
+<div id=todo>
     <div class="logo">
-        <img src="{{ url_for('static', filename='/IMG/LogoFrutasG62.PNG') }}" alt="logoGrupo3"/>
+        <img src="{{ url_for('static', filename='/IMG/Logo_final.PNG') }}" alt="logoGrupo3"/> 
     </div>
     <footer>
         <div class="pie">
-            <p id="parrafo">Todos los derechos reservados a MINTIC</p>
+            <div class="telefono">
+                <img class="iconos" src="{{ url_for('static', filename='/IMG/telefono.png') }}" alt="telefono"/> 
+                <p>(+57) 3136661122 </p>
+            </div>
+          
+        <div class="correo">
+            <img  class="iconos" src="{{ url_for('static', filename='/IMG/correo.png') }}" alt="correo"/>
+            <p>FrescuraSinEs3@gmail.com</p> 
         </div>
-    </footer>
+           
+           <div class="ubicacion">
+                <img class="iconos" src="{{ url_for('static', filename='/IMG/ubicacion.png') }}" alt="ubicacion"/>
+                 <p>calle Siempre viva 742, Springfield</p> 
+           </div>
+        </div>
+    </div>   
+</div>
+</footer>
 </body>
 
 </html>

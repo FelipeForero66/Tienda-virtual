@@ -2,39 +2,41 @@
 
 {% block content %}
 
-  
+<div class="contabilidad">
+<form action="venta_Productos">
+
 <div class="clientedatos">
-  <p>Cedula:<input type="text" name="cedula" maxlength="10" /></p>
+  <p>Cedula:<input  class= "cajas" type="text" name="cedula" maxlength="10"/></p>
   <button class="boton" >Consultar</button>
-  <p>Cliente:<input type="text" name="Nombre completo" maxlength="10" /></p>
-  <p>Consecutivo:<input type="text" name="correo" maxlength="20" /></p>
+ 
+  <p>Cliente:<input class= "cajas" type="text" name="Nombre completo" maxlength="10" /></p> 
+
+  <p>Consecutivo:<input class= "cajas" type="text" name="correo" maxlength="20" /></p>
 </div>
 
 <div class="productodatos">
-  <p>Codigo de producto:<input type="text" name="usuario" maxlength="10" /></p>
+  <p>Codigo de producto:<input class= "cajas" type="text" name="usuario" maxlength="10" /></p>
   <button class="boton" >Consultar</button>
-  <p>Nombre Producto: <input type="password" name="password" minlength="6" /></p>
-  <p>Cantidad: <input type="password" name="password" minlength="6" /></p>
-  <p>Vlr Total: <input type="password" name="password" minlength="6" /></p>
+  <p>Nombre Producto: <input  class= "cajas" type="password" name="password" minlength="6" /></p>
+  <p>Cantidad: <input class= "cajas" type="password" name="password" minlength="6" /></p>
+  <p>Vlr Total: <input class= "cajas" type="password" name="password" minlength="6" /></p>
 </div>
 
 <div class="productodatos1">
-  <p>Codigo de producto:<input type="text" name="usuario" maxlength="10" /></p>
+  <p>Codigo de producto:<input class= "cajas" type="text" name="usuario" maxlength="10" /></p>
   <button class="boton" >Consultar</button>
-  <p>Nombre Producto: <input type="password" name="password" minlength="6" /></p>
-  <p>Cantidad: <input type="password" name="password" minlength="6" /></p>
-  <p>Vlr Total: <input type="password" name="password" minlength="6" /></p>
+  <p>Nombre Producto:<input class= "cajas" type="password" name="password" minlength="6" /></p>
+  <p>Cantidad: <input class= "cajas" type="password" name="password" minlength="6" /></p>
+  <p>Vlr Total: <input class= "cajas" type="password" name="password" minlength="6" /></p>
 </div>
 
 <div class="productodatos1">
-  <p>Codigo de producto:<input type="text" name="usuario" maxlength="10" /></p>
+  <p>Codigo de producto:<input class= "cajas" type="text" name="usuario" maxlength="10" /></p>
   <button class="boton" >Consultar</button>
-  <p>Nombre Producto: <input type="password" name="password" minlength="6" /></p>
-  <p>Cantidad: <input type="password" name="password" minlength="6" /></p>
-  <p>Vlr Total: <input type="password" name="password" minlength="6" /></p>
+  <p>Nombre Producto: <input class= "cajas" type="password" name="password" minlength="6" /></p>
+  <p>Cantidad: <input class= "cajas" type="password" name="password" minlength="6" /></p>
+  <p>Vlr Total: <input class= "cajas" type="password" name="password" minlength="6" /></p>
 </div>
-
-
 
 <div class="totalventa">
   <section class ="izquierda">
@@ -44,11 +46,38 @@
   </section>
   
  <aside>
-    <p>Total Venta: <input type="password" name="password" minlength="6" /></p>
-    <p>Total IVA: <input type="password" name="password" minlength="6" /></p>
-    <p>Total con IVA: <input type="password" name="password" minlength="6" /></p>
+    <p>Total Venta: <input class= "cajas" type="password" name="password" minlength="6" /></p>
+    <p>Total IVA: <input class= "cajas" type="password" name="password" minlength="6" /></p>
+    <p>Total con IVA: <input class= "cajas" type="password" name="password" minlength="6" /></p>
  </aside> 
  
 </div>
+</form>
+</div>
+<div id=todo>
+   
+    <footer>
+        <div class="pie">
+            <div class="telefono">
+                <img class="iconos" src="{{ url_for('static', filename='/IMG/telefono.png') }}" alt="telefono"/> 
+                <p>(+57) 3136661122 </p>
+            </div>
+          
+        <div class="correo">
+            <img  class="iconos" src="{{ url_for('static', filename='/IMG/correo.png') }}" alt="correo"/>
+            <p>FrescuraSinEs3@gmail.com</p> 
+        </div>
+           
+           <div class="ubicacion">
+                <img class="iconos" src="{{ url_for('static', filename='/IMG/ubicacion.png') }}" alt="ubicacion"/>
+                 <p>calle Siempre viva 742, Springfield</p> 
+           </div>
+        </div>
+    </div>   
+</div>
+</footer>
 
-{% endblock %}
+
+
+<!-- 
+{% endblock %} -->
